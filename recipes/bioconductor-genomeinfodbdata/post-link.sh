@@ -16,7 +16,7 @@ TARBALL=$STAGING/$FN
 
 SUCCESS=0
 for URL in ${URLS[@]}; do
-  curl $URL > $TARBALL
+  cp ./bioconductor-genomeinfodbdata_1.2.6_src_all.tar.gz $TARBALL
   [[ $? == 0 ]] || continue
 
   # Platform-specific md5sum checks.
